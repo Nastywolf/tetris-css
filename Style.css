@@ -1,0 +1,14 @@
+nav {
+    color: initial;
+	width:125px;
+	background-color: yellow;
+    text-decoration: initial;
+	float: left;
+}
+section {
+	background-color: green;
+    color: initial;
+	height: 500px;
+    text-decoration: initial;
+    margin-left: 150px;
+}
