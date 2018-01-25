@@ -5,22 +5,41 @@ body {
  background-size: cover;
 }
 header{
-
-
   width: 730px;
   background-image: url("tetris1.gif");
-
   background-size: cover;
   height:260px;
 
 }
 nav {
     color: initial;
-	width:200px;
+	width: 200px;
 	height: 400px;
 	background-color: yellow;
     text-decoration: initial;
 	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#menu div {
+	margin-left: 20px;
+	margin-right: 20px;
+  background: #c00 ;
+  color: #fff ;
+  border: 1px solid #600 ;
+  margin-bottom: 5px ;
+  margin-top: 5px ;
+}
+#menu div a{
+  display: block ;
+  background: #c00 ;
+  color: #fff ;
+  font: 1em "Trebuchet MS",Arial,sans-serif ;
+  line-height: 1em ;
+  text-align: center ;
+  text-decoration: none ;
+  padding: 4px 0 ;
 }
 section {
 	text-indent: 10px;
@@ -255,6 +274,7 @@ animation-timing-function: ease-in;
 	   90%{transform: translateX(300px) translateY(-400px) rotate(-22.5deg);}
 	   95%{transform: translateX(350px) translateY(-400px) rotate(-33.75deg);}
 	   100%{transform: translateX(400px) translateY(-400px)rotate(-45deg);}
+}
 
  #score{
 	 position: absolute;
