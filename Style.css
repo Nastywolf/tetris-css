@@ -334,6 +334,7 @@ h2{
 	  float: left;
   }
   #coins{
+	  background-color: black;
 	  text-align: center;
 	  color: #DBBF11;
 	  margin-top: 200px;
