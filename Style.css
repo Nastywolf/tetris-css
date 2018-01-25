@@ -220,6 +220,7 @@ animation-timing-function: ease-in;
 	   height: 120vh;
 	   position: absolute;
 	   animation: changePage 6s;
+	   z-index: 100;
    }
 @keyframes changePage{
 	   0%{transform: translateX(-600px)translateY(-400px) rotate(0eg);}
