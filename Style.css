@@ -1,6 +1,7 @@
 body {
  background-color:#00F;
  letter-spacing:.1em;
+ background-image: url("game over.png");
 }
 header{
 
@@ -20,7 +21,7 @@ nav {
 	float: left;
 }
 section {
-	background-color: green;
+
     color: initial;
 	height: 500px;
     text-decoration: initial;
@@ -237,4 +238,3 @@ animation-timing-function: ease-in;
 	   95%{transform: translateX(350px) translateY(-400px) rotate(-33.75deg);}
 	   100%{transform: translateX(400px) translateY(-400px)rotate(-45deg);}
    }
-
