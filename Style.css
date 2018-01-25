@@ -2,6 +2,14 @@ body {
  background-color:#00F;
  letter-spacing:.1em;
 }
+header{
+  content: "";
+
+  width: 730px;
+  background-image: url("file:///C:/Users/ajc/Desktop/tetris css/tetris-css/tetris1.gif");
+  background-size: cover;
+  height:260px;
+}
 nav {
     color: initial;
 	width:200px;
@@ -34,4 +42,23 @@ h2{
  font-size: 22px;
  color:#000000;
  font-family: cursive;
+}
+#tetrist{
+  position: fixed;
+  
+/* animation: animation1 7s infinite; */
+}
+
+@keyframes animation1
+{0% { transform: translateX(0px) rotate(0deg); background-color:#c11111;}
+10% { transform: translateX(400px) rotate(3000deg); background-color:#c15110; }
+20% { transform: translateX(0px) rotate(6000deg); background-color:#c1970f; }
+30% { transform: translateX(400px) rotate(9000deg); background-color:#79c10e; }
+40% { transform: translateX(0px) rotate(12000deg); background-color:#2bc10d; }
+50% { transform: translateX(400px) rotate(15000deg); background-color:#0cc176; }
+60% { transform: translateX(0px) rotate(18000deg); background-color:#0d75bf; }
+70% { transform: translateX(400px) rotate(21000deg); background-color:#0d12bf; }
+80% { transform: translateX(0px) rotate(24000deg); background-color:#9e0dbf; }
+90% { transform: translateX(400px) rotate(27000deg); background-color:#bf0d3f; }
+100% { transform: translateX(0px) rotate(30000deg); background-color:#bf0d0d; }
 }
