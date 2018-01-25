@@ -58,7 +58,7 @@ animation: animation1 100s linear infinite;
 position: relative;
 top:30px;
 left: -150px;
-animation: rotateOutDownLeft 2s infinite;
+animation: rotateOutDownLeft 5s infinite;
 }
 #tetrise:hover{
 animation: rotateOutDownLeft 2s;
@@ -93,10 +93,11 @@ animation: zoomOutDown 3s;
 #tetriss{
 position: relative;
 top:-175px;
-left: 140px
+left: 140px;
+animation: rubberBand 5s infinite;
 }
 #teriss:hover{
-
+animation: rubberBand 5s;
 }
 @keyframes rotateOutDownLeft {
   0% {
@@ -176,3 +177,33 @@ animation-timing-function: ease-in;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
   }
   }
+  @keyframes rubberBand {
+   0% {
+   -webkit-transform: scale3d(1, 1, 1);
+   transform: scale3d(1, 1, 1);
+   }
+   30% {
+   -webkit-transform: scale3d(1.25, 0.75, 1);
+   transform: scale3d(1.25, 0.75, 1);
+   }
+   40% {
+   -webkit-transform: scale3d(0.75, 1.25, 1);
+   transform: scale3d(0.75, 1.25, 1);
+   }
+   50% {
+   -webkit-transform: scale3d(1.15, 0.85, 1);
+   transform: scale3d(1.15, 0.85, 1);
+   }
+   65% {
+   -webkit-transform: scale3d(.95, 1.05, 1);
+   transform: scale3d(.95, 1.05, 1);
+   }
+   75% {
+   -webkit-transform: scale3d(1.05, .95, 1);
+   transform: scale3d(1.05, .95, 1);
+   }
+   100% {
+   -webkit-transform: scale3d(1, 1, 1);
+   transform: scale3d(1, 1, 1);
+   }
+   }
