@@ -330,3 +330,12 @@ h2{
   #tetromino{
 	  float: left;
   }
+  #coins{
+	  text-align: center;
+	  color: #DBBF11;
+	  margin-top: 200px;
+	  animation: cligno 3s infinite;
+  }
+  @keyframes cligno{
+	50% { opacity: 0;}
+}
