@@ -151,6 +151,7 @@ h2{
   width: 214px;
   border-radius: 10%;
 }
+
 @keyframes rotateOutDownLeft {
   0% {
     -webkit-transform-origin: left bottom;
