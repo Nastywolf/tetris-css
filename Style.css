@@ -269,14 +269,14 @@ h2{
   }
 }
 #image{
-  background-image: url("tete.jpg");
+  background-image: url("imprecran.png");
   top: 400px;
   left: 500px;
   transform :rotate(-45deg);
   width: 120vw;
   height: 120vh;
   position: absolute;
-  animation: changePage 6s;
+  animation: changePage 5s;
   z-index: 100;
 }
 @keyframes changePage{
