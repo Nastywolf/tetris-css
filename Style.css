@@ -64,51 +64,58 @@ top:30px;
 left: -150px;
 animation: rotateOutDownLeft 5s infinite;
 }
-#tetrise:hover{
-animation: rotateOutDownLeft 2s;
-}
+
 #tetrist2{
 position: relative;
 top:30px;
 left: -250px;
 }
-#tetrit2:hover{
 
-}
 #tetrisr{
 position: relative;
 top:-175px;
 left: 250px;
 animation: flip 2s infinite;
 }
-#tetrisr:hover{
-  animation: flip 2s infinite;
 
-}
 #tetrisi{
 position: relative;
 top:-175px;
 left: 200px;
 animation: zoomOutDown 3s infinite;
 }
-#tetrisi:hover{
-animation: zoomOutDown 3s;
-}
+
 #tetriss{
 position: relative;
 top:-175px;
 left: 140px;
 animation: rubberBand 5s infinite;
 }
-#teriss:hover{
-animation: rubberBand 5s;
-}
+
 .T{
+
     border: none;
     background: transparent;
-    background-image: url("tetrimino1.png");
-    height: 100px;
-    width: 214px;
+    background-image: url("tetrimino4.png");
+    height: 105px;
+    width: 105px;
+    border-radius: 10%;
+}
+.R{
+  border: none;
+  background: transparent;
+  background-image: url("tetrimino6.png");
+  height: 105px;
+  width: 160px;
+  border-radius: 10%;
+}
+.S{
+  border: none;
+  background: transparent;
+  background-image: url("tetrimino1.png");
+  height: 100px;
+  width: 214px;
+  border-radius: 10%;
 }
 @keyframes rotateOutDownLeft {
   0% {
@@ -248,7 +255,7 @@ animation-timing-function: ease-in;
 	   90%{transform: translateX(300px) translateY(-400px) rotate(-22.5deg);}
 	   95%{transform: translateX(350px) translateY(-400px) rotate(-33.75deg);}
 	   100%{transform: translateX(400px) translateY(-400px)rotate(-45deg);}
-   }
+
  #score{
 	 position: absolute;
 	 top: 275px;
@@ -268,6 +275,5 @@ table
 }
 td
 {
-   
-}
 
+}
