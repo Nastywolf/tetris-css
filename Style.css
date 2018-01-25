@@ -23,7 +23,8 @@ nav {
 	float: left;
 }
 section {
-
+	text-indent: 10px;
+	background-color: gray;
     color: initial;
 	height: 500px;
     text-decoration: initial;
@@ -241,4 +242,24 @@ animation-timing-function: ease-in;
 	   95%{transform: translateX(350px) translateY(-400px) rotate(-33.75deg);}
 	   100%{transform: translateX(400px) translateY(-400px)rotate(-45deg);}
    }
- 
+ #score{
+	 position: absolute;
+	 top: 275px;
+	 left: 1000px;
+ }
+ #plateau{
+	position: absolute;
+	 top: 275px;
+	 left: 300px;
+	 background-color: blue;
+	 width: 40vw;
+	 height: 60vh;
+ }
+table
+{
+    border-collapse: collapse;
+}
+td
+{
+   
+}
