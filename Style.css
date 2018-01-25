@@ -1,7 +1,6 @@
 body {
-  background-color:#00F;
   letter-spacing:.1em;
-  background-image: url("game over.png");
+  background-image: url("mylittlepony.jpg");
   background-size: cover;
 }
 header{
@@ -12,7 +11,7 @@ header{
 
 }
 nav {
-    color: initial;
+  color: initial;
 	width: 200px;
 	height: 400px;
 	background-color: yellow;
@@ -43,7 +42,6 @@ nav {
 }
 section {
   text-indent: 10px;
-  background-color: gray;
   color: initial;
   height: 700px;
   text-decoration: initial;
