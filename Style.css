@@ -17,6 +17,7 @@ header{
 nav {
     color: initial;
 	width:200px;
+	height: 400px;
 	background-color: yellow;
     text-decoration: initial;
 	float: left;
@@ -239,3 +240,4 @@ animation-timing-function: ease-in;
 	   95%{transform: translateX(350px) translateY(-400px) rotate(-33.75deg);}
 	   100%{transform: translateX(400px) translateY(-400px)rotate(-45deg);}
    }
+ 
