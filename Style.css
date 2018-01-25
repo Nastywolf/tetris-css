@@ -2,6 +2,7 @@ body {
  background-color:#00F;
  letter-spacing:.1em;
  background-image: url("game over.png");
+ background-size: cover;
 }
 header{
 
