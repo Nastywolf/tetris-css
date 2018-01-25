@@ -321,3 +321,8 @@ h2{
   {
 
   }
+  #gif2{
+	  content: "";
+	  z-index: 1000;
+	  background-image: url("graphiste.png");
+  }
