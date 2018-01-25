@@ -103,6 +103,13 @@ animation: rubberBand 5s infinite;
 #teriss:hover{
 animation: rubberBand 5s;
 }
+.T{
+    border: none;
+    background: transparent;
+    background-image: url("tetrimino1.png");
+    height: 100px;
+    width: 214px;
+}
 @keyframes rotateOutDownLeft {
   0% {
   -webkit-transform-origin: left bottom;
@@ -242,6 +249,7 @@ animation-timing-function: ease-in;
 	   95%{transform: translateX(350px) translateY(-400px) rotate(-33.75deg);}
 	   100%{transform: translateX(400px) translateY(-400px)rotate(-45deg);}
    }
+<<<<<<< Updated upstream
  #score{
 	 position: absolute;
 	 top: 275px;
@@ -263,3 +271,5 @@ td
 {
    
 }
+=======
+>>>>>>> Stashed changes
