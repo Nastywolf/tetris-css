@@ -6,7 +6,7 @@ header{
   content: "";
 
   width: 730px;
-  background-image: url("file:///C:/Users/ajc/Desktop/tetris css/tetris-css/tetris1.gif");
+  background-image: url("tetris1.gif");
   background-size: cover;
   height:260px;
 }
@@ -45,8 +45,23 @@ h2{
 }
 #tetrist{
   position: fixed;
-  
+
 /* animation: animation1 7s infinite; */
+}
+#tetrise{
+
+}
+#tetrit2{
+
+}
+#tetrisr{
+
+}
+#tetrisi{
+
+}
+#tetriss{
+
 }
 
 @keyframes animation1
