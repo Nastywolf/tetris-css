@@ -176,6 +176,7 @@ animation-timing-function: ease-in;
   -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
   }
+<<<<<<< Updated upstream
   }
   @keyframes rubberBand {
    0% {
@@ -207,3 +208,7 @@ animation-timing-function: ease-in;
    transform: scale3d(1, 1, 1);
    }
    }
+=======
+
+
+>>>>>>> Stashed changes
