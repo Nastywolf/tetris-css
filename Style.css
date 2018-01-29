@@ -302,11 +302,11 @@ h2{
   #score{
     position: absolute;
     top: 275px;
-    left: 800px;
+    left: 1000px;
 	background-image: url("grille2.png");
 	background-size: cover;
-	width: 10vw;
-	height: 30vh;
+	width: 200px;
+	height: 300px;
   }
   #plateau{
 	background-image: url("grille.jpg");
@@ -315,8 +315,8 @@ h2{
     top: 275px;
     left: 400px;
     background-color: blue;
-    width: 20vw;
-    height: 75vh;
+    width: 400px;
+    height: 800px;
   }
   table
   {
