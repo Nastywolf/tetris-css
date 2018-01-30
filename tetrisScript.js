@@ -11,7 +11,6 @@ document.onkeydown = function(event){
     switch(keyCode){
      case 38:
 		// alert("38");
-        j--;
         break;
     case 40:
 		// alert("40");
