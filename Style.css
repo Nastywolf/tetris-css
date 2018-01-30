@@ -338,7 +338,7 @@ h2{
   }
   #tetromino{
 	background-image: url("tetrimino7.png");
-	background-size : cover; 
+	background-size : cover;
 	height : 70px;
 	width: 105px;
     position: absolute;
@@ -356,4 +356,36 @@ h2{
   }
   @keyframes cligno{
 	50% { opacity: 0;}
+}
+
+
+
+.cube{
+ background-image: url("Sans titre.png");
+ background-color: red;
+ background-size: 100% 100%;
+ /* background-color: red; */
+ position:relative;
+ float:left;
+ height:35px;
+ width:35px;
+z-index: 1000;
+}
+.vide{
+ /* background-image: url(poulecarre.png); */
+ position:relative;
+ float:left;
+ height:35px;
+ width:35px;
+
+}
+.ligne{
+ height: 35px;
+}
+.tetri{
+ position: absolute;
+ display:inline-block;
+ left: 0px;
+ top: 0px;
+
 }
