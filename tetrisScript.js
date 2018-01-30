@@ -38,60 +38,60 @@ function dessinerPiece(str){
   return piece;
 }
 
-	function rotate(){
- if (figureActuelle == figure1){
-	figureActuelle = figure1_90;
-	return figureActuelle;
- }
+function rotate(){
+  if (figureActuelle == figure1){
+    figureActuelle = figure1_90;
+    return figureActuelle;
+  }
 
- if (figureActuelle == figure1_90){
-   figureActuelle = figure1_180;
-   return figureActuelle;
- }
+  if (figureActuelle == figure1_90){
+    figureActuelle = figure1_180;
+    return figureActuelle;
+  }
 
- if (figureActuelle == figure1_180){
-   figureActuelle = figure1_270;
- return figureActuelle;}
- 
+  if (figureActuelle == figure1_180){
+    figureActuelle = figure1_270;
+    return figureActuelle;}
 
- if (figureActuelle == figure1_270){
-   figureActuelle = figure1;
-   return figureActuelle;
- }
-}
 
-document.onkeydown = function(event){
+    if (figureActuelle == figure1_270){
+      figureActuelle = figure1;
+      return figureActuelle;
+    }
+  }
+
+  document.onkeydown = function(event){
     var event = event || window.event,
-        keyCode = event.keyCode;
+    keyCode = event.keyCode;
 
     // On détecte l'événement puis selon la fleche, on incrémente ou décrément les variables globales de position, i et j.
     switch(keyCode){
-     case 38:
-		// alert("38");
-		tetri.html(dessinerPiece(rotate()));
-        break;
-    case 40:
-		// alert("40");
-        j++;
-        break;
-    case 37:
-		// alert("37");
-        i--;
-        break;
-    case 39:
-		// alert("39");
-        i++;
-        break;
+      case 38:
+      // alert("38");
+      tetri.html(dessinerPiece(rotate()));
+      break;
+      case 40:
+      // alert("40");
+      j++;
+      break;
+      case 37:
+      // alert("37");
+      i--;
+      break;
+      case 39:
+      // alert("39");
+      i++;
+      break;
     }
     // Et enfin on applique les modifications :
     s.left = String(i*35)+'px';
     s.top = String(j*35)+'px';
-}
+  }
 
-window.onload = function jeu (){
-	setInterval(function(){
-		j++;
-		s.top = String(j*35)+'px';
-	}
-	, 1000)
-}
+  window.onload = function jeu (){
+    setInterval(function(){
+      j++;
+      s.top = String(j*35)+'px';
+    }
+    , 1000)
+  }
