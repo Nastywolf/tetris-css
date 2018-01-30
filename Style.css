@@ -315,8 +315,8 @@ h2{
     top: 275px;
     left: 400px;
     background-color: blue;
-    width: 400px;
-    height: 800px;
+    width: 385px;
+    height: 665px;
   }
   table
   {
@@ -325,6 +325,11 @@ h2{
 	background-size: cover;
 	height: 40vh;
 	width: 40vw
+  }
+  #case{
+    position: absolute;
+    width : 35px;
+    height : 35px;
   }
   td
   {
