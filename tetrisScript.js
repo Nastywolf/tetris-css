@@ -60,6 +60,7 @@ tetri.html(dessinerPiece(figure1));
    return figureActuelle;
  }
 }
+
 document.onkeydown = function(event){
     var event = event || window.event,
         keyCode = event.keyCode;
@@ -88,3 +89,10 @@ document.onkeydown = function(event){
     s.top = String(j*35)+'px';
 }
 
+window.onload = function jeu (){
+	setInterval(function(){
+		j++;
+		s.top = String(j*35)+'px';
+	}
+	, 1000)
+}
