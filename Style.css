@@ -276,7 +276,7 @@ h2{
   width: 120vw;
   height: 120vh;
   position: absolute;
-  animation: changePage 5s;
+  /* animation: changePage 5s; */
   z-index: 100;
 }
 @keyframes changePage{
@@ -336,8 +336,11 @@ h2{
 
   }
   #tetromino{
-	  float: left;
+    position: absolute;
+    top: 0px;
+    left: 0px;
   }
+
   #coins{
 	  background-color: black;
 	  text-align: center;
