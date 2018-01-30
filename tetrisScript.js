@@ -1,33 +1,33 @@
-function keyPress( key )
-{
-  var tetrimino = $("tetromino");
-  var gauche = tetromino.style.left;
-    // gestion des déplacements de la forme et de la rotation
-    switch ( key )
-    {
-        case 'left':
-            // if ( valid( -1 ) )
-                --currentX;
-                tetromino.left = gauche-35;
-            break;
 
-        case 'right':
-            // if ( valid( 1 ) )
-                ++currentX;
-                tetromino.left = gauche+35;
-            break;
-
-        case 'down':
-            // if ( valid( 0, 1 ) )
-                ++currentY;
-                tetromino.top = top+35;
-            break;
-
-        // case 'rotate':
-        //     var rotated = rotate( current );
-        //
-        //     if ( valid( 0, 0, rotated ) )
-        //         current = rotated;
-        //     break;
+  var cadre = document.getElementById('tetromino'),
+    s = cadre.style, // Un petit raccourci
+    i = cadre.offsetLeft, // On récupère la position absolue initiale.
+    j = cadre.offsetTop;
+document.onkeydown = function(event){
+    var event = event || window.event,
+        keyCode = event.keyCode;
+     
+    // On détecte l'événement puis selon la fleche, on incrémente ou décrément les variables globales de position, i et j.
+    switch(keyCode){
+     case 38:
+		// alert("38");
+        j--;
+        break;
+    case 40:
+		// alert("40");
+        j++;
+        break;
+    case 37:
+		// alert("37");
+        i--;
+        break;
+    case 39:
+		// alert("39");
+        i++;
+        break;
     }
+    // Et enfin on applique les modifications :
+    s.left = String(i*35)+'px';
+    s.top = String(j*35)+'px';
 }
+

@@ -317,6 +317,7 @@ h2{
     background-color: blue;
     width: 385px;
     height: 665px;
+	 z-index: 20;
   }
   table
   {
@@ -336,9 +337,14 @@ h2{
 
   }
   #tetromino{
+	background-image: url("tetrimino7.png");
+	background-size : cover; 
+	height : 70px;
+	width: 105px;
     position: absolute;
     top: 0px;
     left: 0px;
+	 z-index: 100;
   }
 
   #coins{
