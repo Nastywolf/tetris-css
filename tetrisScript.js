@@ -8,6 +8,12 @@ var tetri=$('<div/>');
 tetri.addClass('tetri');
 $('article[id="plateau"]').append(tetri);
 
+var cadre = document.getElementsByClassName('tetri');
+var s = cadre[0].style; // Un petit raccourci
+var i = cadre[0].offsetLeft; // On récupère la position absolue initiale.
+var j = cadre[0].offsetTop;
+
+tetri.html(dessinerPiece(figure1));
 
 function dessinerPiece(str){
   var piece=$('<div/>');
@@ -32,13 +38,6 @@ function dessinerPiece(str){
   return piece;
 }
 
-tetri.html(dessinerPiece(figure1));
-
-  var cadre = document.getElementsByClassName('tetri'),
-    s = cadre[0].style, // Un petit raccourci
-    i = cadre[0].offsetLeft, // On récupère la position absolue initiale.
-    j = cadre[0].offsetTop;
-	
 	function rotate(){
  if (figureActuelle == figure1){
 	figureActuelle = figure1_90;
