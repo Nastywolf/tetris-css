@@ -1,15 +1,22 @@
 var figure1= '1,1,1/1,0,0';
 var figure1_90='1,1/0,1/0,1';
-function ajouterPiece(str){
+var figure1_180= '0,0,1/1,1,1';
+var figure1_270='1,0/1,0/1,1';
+var figureActuelle = figure1;
+
+var tetri=$('<div/>');
+tetri.addClass('tetri');
+$('article[id="plateau"]').append(tetri);
+
+
+function dessinerPiece(str){
+  var piece=$('<div/>');
   var split1 =str.split('/');
-  var tetri=$('<div/>');
-  tetri.addClass('tetri');
-  $('article[id="plateau"]').append(tetri);
   for(var i=0;i<split1.length;i++){
     split2=split1[i].split(',');
     var ligne=$('<div/>');
     ligne.addClass('ligne');
-    tetri.append(ligne);
+    piece.append(ligne);
     for(var j=0; j<split2.length;j++){
       var str1 = split2[j];
       var case1 = $('<div/>');
@@ -20,18 +27,39 @@ function ajouterPiece(str){
       if (str1==0){
         case1.addClass('vide');
       }
-
-
     }
   };
+  return piece;
 }
 
-ajouterPiece(figure1);
+tetri.html(dessinerPiece(figure1));
 
   var cadre = document.getElementsByClassName('tetri'),
     s = cadre[0].style, // Un petit raccourci
     i = cadre[0].offsetLeft, // On récupère la position absolue initiale.
     j = cadre[0].offsetTop;
+	
+	function rotate(){
+ if (figureActuelle == figure1){
+	figureActuelle = figure1_90;
+	return figureActuelle;
+ }
+
+ if (figureActuelle == figure1_90){
+   figureActuelle = figure1_180;
+   return figureActuelle;
+ }
+
+ if (figureActuelle == figure1_180){
+   figureActuelle = figure1_270;
+ return figureActuelle;}
+ 
+
+ if (figureActuelle == figure1_270){
+   figureActuelle = figure1;
+   return figureActuelle;
+ }
+}
 document.onkeydown = function(event){
     var event = event || window.event,
         keyCode = event.keyCode;
@@ -40,6 +68,7 @@ document.onkeydown = function(event){
     switch(keyCode){
      case 38:
 		// alert("38");
+		tetri.html(dessinerPiece(rotate()));
         break;
     case 40:
 		// alert("40");
@@ -58,3 +87,4 @@ document.onkeydown = function(event){
     s.left = String(i*35)+'px';
     s.top = String(j*35)+'px';
 }
+
